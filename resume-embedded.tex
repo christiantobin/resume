@@ -1,0 +1,136 @@
+% Robotics/Embedded Systems Resume
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Christian Tobin}}\\
+    San Marcos, California
+    \vspace{0.05cm}
+    \\
+    \raisebox{-0.2\height} {\Large \faPhoneSquare} \ \ (760) 637-7682 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ christian@wirelesseco.com \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ github.com/christiantobin  
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+        
+    \item
+        \headerrow
+        {\textbf{Fluidra North America}}
+        {\textbf{San Marcos, CA}}
+        \headerrow
+        {\emph{Software Engineer II}}
+        {\emph{January 2023 -- Present}}
+        \begin{itemize*}
+            \item Developed embedded firmware for Pool Automation Systems, reducing power consumption by 30\%.
+            \item Implemented edge ML models for equipment optimization, improving efficiency by 25\%.
+            \item Created real-time control systems handling 1000+ sensor inputs per second with sub-millisecond latency.
+        \end{itemize*}
+            
+    \item
+        \headerrow
+        {\emph{Software Engineer I}}
+        {\emph{May 2021 -- January 2023}}
+        \begin{itemize*}
+            \item Engineered embedded control systems for pool cleaner robots, improving cleaning efficiency by 40\%.
+            \item Implemented real-time data collection system processing 10K+ sensor readings per minute.
+            \item Developed low-level communication protocols reducing data transmission overhead by 50\%.
+        \end{itemize*}
+            
+    \item
+        \headerrow
+        {\textbf{Personal Project}}
+        {\textbf{Concert Performer Tracking System}}
+        \begin{itemize*}
+            \item Developed Ultra Wide Band positioning system achieving centimeter-level precision.
+            \item Created MQTT-based DMX light control system reducing setup time by 75\%.
+            \item Implemented real-time 3D tracking with 100Hz update rate.
+        \end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\begin{itemize}[leftmargin=1em,noitemsep]
+    \item \textbf{Embedded:}
+          Zephyr RTOS, C/C++, Rust, Lua
+    \item \textbf{Protocols:}
+          UART, SPI, I2C, MQTT, Zigbee
+    \item \textbf{Tools:}
+          Linux (Arch btw), GCC, GDB, AWS Greengrass
+\end{itemize}
+
+\subsection*{\Large Education \& Certifications}
+
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+        
+    \item
+        \headerrow
+        {\textbf{Georgia Institute of Technology}}
+        {\textbf{Online}}
+        \headerrow
+        {\emph{M.S. Computer Science}}
+        {\emph{Expected May 2026}}
+        
+    \item
+        \headerrow
+        {\textbf{Cal State University San Marcos}}
+        {\textbf{San Marcos, CA}}
+        \headerrow
+        {\emph{B.S. Computer Science}}
+        {\emph{Graduated May 2022}}
+        
+    \item
+        \headerrow
+        {\textbf{AWS Certified Solutions Architect -- Associate}}
+        {\textbf{2023}}
+        
+    \item
+        \headerrow
+        {\textbf{AWS Certified Software Practitioner}}
+        {\textbf{2023}}
+\end{itemize}
+
+\end{document}
+

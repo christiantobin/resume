@@ -1,0 +1,138 @@
+% Full Stack Resume
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Christian Tobin}}\\
+    San Marcos, California
+    \vspace{0.05cm}
+    \\
+    \raisebox{-0.2\height} {\Large \faPhoneSquare} \ \ (760) 637-7682 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ christian@wirelesseco.com \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ github.com/christiantobin  
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Experience}
+
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+        
+    \item
+        \headerrow
+        {\textbf{Fluidra North America}}
+        {\textbf{San Marcos, CA}}
+        \headerrow
+        {\emph{Software Engineer II}}
+        {\emph{January 2023 -- Present}}
+        \begin{itemize*}
+            \item Developed full-stack Pool Automation System using Next.js and AWS, resulting in 60\% improvement in user experience metrics.
+            \item Implemented responsive web interfaces with real-time IoT data visualization, increasing daily active users by 45\%.
+            \item Created reusable component library reducing new feature development time by 30\%.
+        \end{itemize*}
+            
+    \item
+        \headerrow
+        {\emph{Software Engineer I}}
+        {\emph{May 2021 -- January 2023}}
+        \begin{itemize*}
+            \item Built serverless API infrastructure supporting 100K+ daily requests with 99.9\% uptime.
+            \item Developed user notification system increasing mobile app engagement by 1000\%.
+            \item Architected CI/CD pipelines reducing deployment time from hours to minutes.
+        \end{itemize*}
+            
+    \item
+        \headerrow
+        {\textbf{DJO Global}}
+        {\textbf{Carlsbad, CA}}
+        \headerrow
+        {\emph{Software Engineer Intern}}
+        {\emph{June 2019 -- May 2021}}
+        \begin{itemize*}
+            \item Created full-stack inventory tracking application reducing manual processes by 75\%.
+            \item Implemented secure authentication system with 100\% compliance with security requirements.
+        \end{itemize*}
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\begin{itemize}[leftmargin=1em,noitemsep]
+    \item \textbf{Frontend:}
+          Next.js, TypeScript, React, Responsive Design
+    \item \textbf{Backend:}
+          AWS Lambda, API Gateway, DynamoDB, MongoDB
+    \item \textbf{DevOps:}
+          GitHub Actions, AWS CDK, CI/CD, Git
+\end{itemize}
+
+\subsection*{\Large Education \& Certifications}
+
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+        
+    \item
+        \headerrow
+        {\textbf{Georgia Institute of Technology}}
+        {\textbf{Online}}
+        \headerrow
+        {\emph{M.S. Computer Science}}
+        {\emph{Expected May 2026}}
+        
+    \item
+        \headerrow
+        {\textbf{Cal State University San Marcos}}
+        {\textbf{San Marcos, CA}}
+        \headerrow
+        {\emph{B.S. Computer Science}}
+        {\emph{Graduated May 2022}}
+        
+    \item
+        \headerrow
+        {\textbf{AWS Certified Solutions Architect -- Associate}}
+        {\textbf{2023}}
+        
+    \item
+        \headerrow
+        {\textbf{AWS Certified Software Practitioner}}
+        {\textbf{2023}}
+\end{itemize}
+
+\end{document}
+
+
